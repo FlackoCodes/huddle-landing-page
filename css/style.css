@@ -1,0 +1,229 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+h2,
+h3,
+h4,
+h5{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+
+.container{
+   width: 85%;
+   margin: 0 auto;
+   padding-top: 2rem;
+}
+
+header{
+    background-color: aqua;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+
+nav button{
+    border: none;
+    background-color: #ffff;
+    border: 1.5px solid hsl(321, 100%, 78%);
+    color: hsl(321, 100%, 78%);
+    border-radius: 15px;
+    padding: 5px 15px;
+    font-weight: 10px;
+}
+
+
+h4{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+p{
+    color: hsla(0, 0%, 0%, 0.644);
+}
+
+button{
+    font-weight: 700;
+    font-size: 18px;
+}
+.stats h3{
+    font-size: 65px;
+    margin: 15px 0;
+}
+
+.messages-sent{
+    text-align: center;
+}
+
+.hero, .outro{
+    text-align: center;
+}
+
+
+.hero h2{
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+
+.hero .about{
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.hero button, .outro button{
+    border: none;
+    background-color: hsl(322, 96%, 44%);
+    color: #ffff;
+    padding: 15px 30px;
+    border-radius: 50px;
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, .1);
+    margin-bottom: 100px;
+}
+
+
+.hero button:hover, .outro button:hover{
+    background-color: hsl(321, 100%, 78%);
+    transition: all ease 3s;
+    cursor: pointer;
+}
+
+.art{
+    width: 400px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.main-para{
+    max-width: 500px;
+}
+
+.outro h5{
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+.stats{
+    display: flex;
+    text-align: start;
+    justify-content: center;
+    margin: 80px 0;
+    gap: 200px;
+}
+
+.stats img{
+    width: 30px;
+}
+
+.footer-para{
+    width: 400px;
+    margin: 20px 0;
+}
+
+form input{
+    outline: none;
+    width: 200px;
+    height: 30px;
+    padding: 0 20px;
+    border-radius: 5px;
+    border: 1px solid hsla(0, 0%, 0%, 0.1);
+    margin-right: 20px;
+}
+
+.subscribe-btn{
+    padding: 8px 30px;
+    background-color: hsl(322, 96%, 44%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 5px;
+}
+
+
+.subscribe-btn:hover{
+    background-color: hsl(321, 100%, 78%);
+    transition: all ease 3s;
+    cursor: pointer;
+}
+
+.contact .phone{
+    background-image: url(../images/icon-phone.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 30px;
+    margin-bottom: 15px;
+}
+
+.contact .email{
+    background-image: url(../images/icon-email.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 30px;
+}
+
+
+.socials{
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.socials img{
+    width: 30px;
+    color: hsl(0, 0%, 100%);
+    
+}
+
+.footer-logo{
+    color: white;
+}
+
+footer{
+   background-color: hsl(231, 37%, 14%);
+   color: hsl(0, 0%, 100%);
+}
+
+
+.footer p{
+    color: hsl(0, 0%, 100%);
+}
+
+
+@media screen and (max-width: 450px) {
+    .container{
+        width: 50%;
+    }
+
+    .flex, .stats{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    nav{
+        display: flex;
+        justify-content: center;
+    }
+    
+    img[alt="screen-mockup"], .art{
+        width: 250px;
+    }
+}
