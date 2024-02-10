@@ -24,9 +24,6 @@ h5{
    padding-top: 2rem;
 }
 
-header{
-    background-color: aqua;
-}
 
 .nav{
     display: flex;
@@ -103,14 +100,14 @@ button{
 }
 
 .art{
-    width: 400px;
-}
+    width: 700px;
+} 
 
 .flex{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
 }
 
 .main-para{
@@ -164,7 +161,7 @@ form input{
     cursor: pointer;
 }
 
-.contact .phone{
+.contact, .phone{
     background-image: url(../images/icon-phone.svg);
     background-repeat: no-repeat;
     background-position: left center;
@@ -172,7 +169,7 @@ form input{
     margin-bottom: 15px;
 }
 
-.contact .email{
+.contact, .email{
     background-image: url(../images/icon-email.svg);
     background-repeat: no-repeat;
     background-position: left center;
@@ -190,18 +187,28 @@ form input{
 .socials img{
     width: 30px;
     color: hsl(0, 0%, 100%);
-    
 }
 
-.footer-logo{
-    color: white;
+
+#grow-stn{
+    background-image: url(../images/bg-section-top-desktop-1.svg),
+    url(../images/bg-section-bottom-desktop-1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-footer{
-   background-color: hsl(231, 37%, 14%);
-   color: hsl(0, 0%, 100%);
+#users-stn{
+    background-image: url(../images/bg-section-top-desktop-1.svg),
+    url(../images/bg-section-bottom-desktop-1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+ footer{
+    background: url(../images/bg-footer-top-desktop.svg) no-repeat center center/cover;
+    color: hsl(0, 0%, 100%);
+}
+ 
 
 .footer p{
     color: hsl(0, 0%, 100%);
@@ -210,20 +217,32 @@ footer{
 
 @media screen and (max-width: 450px) {
     .container{
-        width: 50%;
+        width: 60%;
+    }
+
+    .flex{
+        margin-bottom: 50px;
     }
 
     .flex, .stats{
         flex-direction: column;
         gap: 50px;
     }
-
-    nav{
-        display: flex;
-        justify-content: center;
+    nav img{
+        width: 150px;
     }
-    
+
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 100px;
+    }
+
+
+
     img[alt="screen-mockup"], .art{
         width: 250px;
     }
+
 }
