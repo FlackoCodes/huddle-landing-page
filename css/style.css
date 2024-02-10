@@ -190,28 +190,23 @@ form input{
 }
 
 
-#grow-stn{
-    background-image: url(../images/bg-section-top-desktop-1.svg),
-    url(../images/bg-section-bottom-desktop-1.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
+#grow-stn, #users-stn{
+    background-color:  hsl(207, 100%, 98%);
 }
 
-#users-stn{
-    background-image: url(../images/bg-section-top-desktop-1.svg),
-    url(../images/bg-section-bottom-desktop-1.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
  footer{
-    background: url(../images/bg-footer-top-desktop.svg) no-repeat center center/cover;
+   background-color: hsl(192, 100%, 9%);
     color: hsl(0, 0%, 100%);
 }
  
 
 .footer p{
     color: hsl(0, 0%, 100%);
+}
+
+.bg-footer-top{
+    margin-bottom: -10px;
 }
 
 
